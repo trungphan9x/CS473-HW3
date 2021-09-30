@@ -32,12 +32,11 @@ class MainActivity : AppCompatActivity() {
 
                 val tableRow = TableRow(applicationContext).apply {
                     layoutParams = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT)
+                    addView(textView1,0)
+                    addView(textView2,1)
+                    setBackgroundColor(Color.YELLOW)
+                    setPadding(0,0,0,100)
                 }
-
-                tableRow.addView(textView1,0)
-                tableRow.addView(textView2,1)
-                tableRow.setBackgroundColor(Color.YELLOW)
-                tableRow.setPadding(0,0,0,100)
 
                 tableLayout.addView(tableRow)
             } else {
